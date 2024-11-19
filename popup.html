@@ -7,6 +7,29 @@
     .status { margin: 10px 0; }
     .timer-input { margin: 10px 0; }
     input[type="number"] { width: 60px; }
+    .more-options {
+      margin-top: 15px;
+      padding-top: 10px;
+      border-top: 1px solid #ccc;
+      text-align: center;
+    }
+    button {
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #moreOptions {
+      background-color: #2196F3;
+    }
+    #moreOptions:hover {
+      background-color: #1976D2;
+    }
   </style>
 </head>
 <body>
@@ -20,6 +43,9 @@
   <div class="tab-list">
     <h3>Inactive Tabs:</h3>
     <ul id="inactiveTabsList"></ul>
+  </div>
+  <div class="more-options">
+    <button id="moreOptions">More Tab Options</button>
   </div>
   <script src="popup.js"></script>
 </body>

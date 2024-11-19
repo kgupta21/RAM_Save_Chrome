@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle -->
+    <circle cx="24" cy="24" r="22" fill="#2196F3"/>
+    
+    <!-- Browser tab shape -->
+    <path d="M14 16h20c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H14c-1.1 0-2-.9-2-2V18c0-1.1.9-2 2-2z" 
+          fill="#FFFFFF" opacity="0.9"/>
+    
+    <!-- Zzz sleep symbol -->
+    <g fill="#2196F3" transform="translate(19, 19)">
+        <path d="M2 2h8l-8 8h8" 
+              stroke="#2196F3" 
+              stroke-width="2" 
+              fill="none"/>
+        <text x="4" y="7" 
+              font-family="Arial" 
+              font-size="10" 
+              fill="#2196F3">z</text>
+    </g>
+    
+    <!-- Memory circuit lines -->
+    <g stroke="#FFFFFF" stroke-width="1.5" opacity="0.6">
+        <line x1="6" y1="24" x2="12" y2="24"/>
+        <line x1="36" y1="24" x2="42" y2="24"/>
+        <line x1="24" y1="6" x2="24" y2="12"/>
+        <line x1="24" y1="36" x2="24" y2="42"/>
+    </g>
+</svg>

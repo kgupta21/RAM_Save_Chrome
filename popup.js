@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCurrentTabStatus();
   updateInactiveTabsList();
 
-  // Add click event listener
+  // Add click event listener for inactivate button
   document.getElementById('inactivate').addEventListener('click', async () => {
     const tab = await updateCurrentTabStatus();
     if (tab) {
@@ -51,5 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
       // Close popup
       window.close();
     }
+  });
+
+  // Add click event listener for more options button
+  document.getElementById('moreOptions').addEventListener('click', () => {
+    chrome.tabs.create({ url: 'tabManager.html' });
+    window.close();
   });
 });

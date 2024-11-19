@@ -1,13 +1,27 @@
 {
     "manifest_version": 3,
-    "name": "Tab Inactivator",
-    "version": "0.0.0.1",
-    "description": "Manually inactivate tabs to save memory.",
+    "name": "RAM Save Chrome",
+    "version": "1.0",
+    "description": "Manage and inactivate browser tabs to save memory",
+    "permissions": [
+        "tabs",
+        "storage",
+        "notifications",
+        "windows",
+        "system.memory"
+    ],
     "action": {
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "default_icon": {
+            "48": "icon48.svg",
+            "128": "icon128.svg"
+        }
     },
-    "permissions": ["tabs", "storage", "notifications"],
     "background": {
         "service_worker": "background.js"
+    },
+    "icons": {
+        "48": "icon48.svg",
+        "128": "icon128.svg"
     }
 }
