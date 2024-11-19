@@ -1,0 +1,26 @@
+<!-- popup.html -->
+<html>
+<head>
+  <style>
+    body { min-width: 300px; padding: 10px; }
+    .tab-list { margin-top: 10px; }
+    .status { margin: 10px 0; }
+    .timer-input { margin: 10px 0; }
+    input[type="number"] { width: 60px; }
+  </style>
+</head>
+<body>
+  <h2>Tab Inactivator</h2>
+  <div class="status">Current Tab Status: <span id="currentStatus">Checking...</span></div>
+  <div class="timer-input">
+    <label for="seconds">Inactivate after: </label>
+    <input type="number" id="seconds" min="1" value="30" /> seconds
+  </div>
+  <button id="inactivate">Set Timer to Inactivate</button>
+  <div class="tab-list">
+    <h3>Inactive Tabs:</h3>
+    <ul id="inactiveTabsList"></ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
