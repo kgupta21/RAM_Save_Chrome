@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         // Create notification about timer start
         chrome.notifications.create({
             type: 'basic',
-            iconUrl: 'icon48.svg',
+            iconUrl: 'chromesave.png',
             title: 'Tab Inactivator',
             message: `Tab will be inactivated in ${message.seconds} seconds`
         });
@@ -33,7 +33,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         // Create notification about bulk timer start
         chrome.notifications.create({
             type: 'basic',
-            iconUrl: 'icon48.svg',
+            iconUrl: 'chromesave.png',
             title: 'Tab Inactivator',
             message: `${tabIds.length} tabs will be inactivated in ${seconds} seconds`
         });

@@ -84,7 +84,7 @@ async function loadTabs() {
 
             const favicon = document.createElement('img');
             favicon.className = 'tab-favicon';
-            favicon.src = 'icon48.svg';
+            favicon.src = 'chromesave.png';
             if (tab.favIconUrl) {
                 const testImage = new Image();
                 testImage.onload = () => {
